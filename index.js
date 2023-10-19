@@ -16,8 +16,8 @@ io.on("connection",(socket) =>{
     });
 });
 
-app.use(express.static(path.resolve("./public")));
 
+app.use(express.static(path.resolve("./public")));
 app.get("/", (req,res)=>{
     return res.sendFile("/public/index.html");
 });
